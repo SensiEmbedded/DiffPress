@@ -43,7 +43,7 @@
       <HintPath>..\log4net.dll</HintPath>
     </Reference>
     <Reference Include="MfgControl.AdvancedHMI.Controls">
-      <HintPath>.\MfgControl.AdvancedHMI.Controls.dll</HintPath>
+      <HintPath>..\MfgControl.AdvancedHMI.Controls.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="nmodbuspc">
