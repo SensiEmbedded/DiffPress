@@ -41,6 +41,9 @@
           System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
           this.pnlMenu = new System.Windows.Forms.Panel();
           this.grbStatus = new System.Windows.Forms.GroupBox();
+          this.line1 = new Unclassified.UI.Line();
+          this.line3 = new Unclassified.UI.Line();
+          this.line2 = new Unclassified.UI.Line();
           this.lblComm = new System.Windows.Forms.Label();
           this.label4 = new System.Windows.Forms.Label();
           this.lblRemain = new System.Windows.Forms.Label();
@@ -65,9 +68,6 @@
           this.ucValue3 = new DiffPress.ucValue();
           this.ucValue2 = new DiffPress.ucValue();
           this.ucValue1 = new DiffPress.ucValue();
-          this.line1 = new Unclassified.UI.Line();
-          this.line3 = new Unclassified.UI.Line();
-          this.line2 = new Unclassified.UI.Line();
           this.pnlMenu.SuspendLayout();
           this.grbStatus.SuspendLayout();
           this.groupBox2.SuspendLayout();
@@ -104,16 +104,53 @@
           this.grbStatus.Controls.Add(this.label3);
           this.grbStatus.Location = new System.Drawing.Point(3, 325);
           this.grbStatus.Name = "grbStatus";
-          this.grbStatus.Size = new System.Drawing.Size(210, 212);
+          this.grbStatus.Size = new System.Drawing.Size(210, 133);
           this.grbStatus.TabIndex = 48;
           this.grbStatus.TabStop = false;
           this.grbStatus.Text = "Status:";
+          // 
+          // line1
+          // 
+          this.line1.BorderColor = System.Drawing.SystemColors.ControlText;
+          this.line1.Dark3dColor = System.Drawing.SystemColors.ControlDark;
+          this.line1.DashStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+          this.line1.Light3dColor = System.Drawing.SystemColors.ControlLightLight;
+          this.line1.Location = new System.Drawing.Point(100, 20);
+          this.line1.Name = "line1";
+          this.line1.Orientation = Unclassified.UI.LineOrientation.Vertical;
+          this.line1.Size = new System.Drawing.Size(1, 98);
+          this.line1.TabIndex = 5;
+          this.line1.TabStop = false;
+          // 
+          // line3
+          // 
+          this.line3.BorderColor = System.Drawing.SystemColors.ControlText;
+          this.line3.Dark3dColor = System.Drawing.SystemColors.ControlDark;
+          this.line3.DashStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+          this.line3.Light3dColor = System.Drawing.SystemColors.ControlLightLight;
+          this.line3.Location = new System.Drawing.Point(9, 92);
+          this.line3.Name = "line3";
+          this.line3.Size = new System.Drawing.Size(188, 2);
+          this.line3.TabIndex = 6;
+          this.line3.TabStop = false;
+          // 
+          // line2
+          // 
+          this.line2.BorderColor = System.Drawing.SystemColors.ControlText;
+          this.line2.Dark3dColor = System.Drawing.SystemColors.ControlDark;
+          this.line2.DashStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+          this.line2.Light3dColor = System.Drawing.SystemColors.ControlLightLight;
+          this.line2.Location = new System.Drawing.Point(8, 70);
+          this.line2.Name = "line2";
+          this.line2.Size = new System.Drawing.Size(188, 2);
+          this.line2.TabIndex = 6;
+          this.line2.TabStop = false;
           // 
           // lblComm
           // 
           this.lblComm.AutoSize = true;
           this.lblComm.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-          this.lblComm.Location = new System.Drawing.Point(105, 60);
+          this.lblComm.Location = new System.Drawing.Point(105, 74);
           this.lblComm.Name = "lblComm";
           this.lblComm.Size = new System.Drawing.Size(50, 13);
           this.lblComm.TabIndex = 3;
@@ -123,7 +160,7 @@
           // 
           this.label4.AutoSize = true;
           this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-          this.label4.Location = new System.Drawing.Point(9, 59);
+          this.label4.Location = new System.Drawing.Point(9, 73);
           this.label4.Name = "label4";
           this.label4.Size = new System.Drawing.Size(81, 13);
           this.label4.TabIndex = 2;
@@ -133,10 +170,10 @@
           // lblRemain
           // 
           this.lblRemain.AutoSize = true;
-          this.lblRemain.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+          this.lblRemain.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
           this.lblRemain.Location = new System.Drawing.Point(108, 31);
           this.lblRemain.Name = "lblRemain";
-          this.lblRemain.Size = new System.Drawing.Size(14, 13);
+          this.lblRemain.Size = new System.Drawing.Size(16, 16);
           this.lblRemain.TabIndex = 3;
           this.lblRemain.Text = "0";
           // 
@@ -146,9 +183,9 @@
           this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
           this.label3.Location = new System.Drawing.Point(32, 21);
           this.label3.Name = "label3";
-          this.label3.Size = new System.Drawing.Size(67, 26);
+          this.label3.Size = new System.Drawing.Size(67, 39);
           this.label3.TabIndex = 2;
-          this.label3.Text = "Time remain \r\nto sql write:";
+          this.label3.Text = "Time remain \r\nto write in\r\ntraceability:";
           this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
           // 
           // groupBox2
@@ -423,43 +460,6 @@
           this.ucValue1.Name = "ucValue1";
           this.ucValue1.Size = new System.Drawing.Size(335, 254);
           this.ucValue1.TabIndex = 62;
-          // 
-          // line1
-          // 
-          this.line1.BorderColor = System.Drawing.SystemColors.ControlText;
-          this.line1.Dark3dColor = System.Drawing.SystemColors.ControlDark;
-          this.line1.DashStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-          this.line1.Light3dColor = System.Drawing.SystemColors.ControlLightLight;
-          this.line1.Location = new System.Drawing.Point(100, 20);
-          this.line1.Name = "line1";
-          this.line1.Orientation = Unclassified.UI.LineOrientation.Vertical;
-          this.line1.Size = new System.Drawing.Size(1, 181);
-          this.line1.TabIndex = 5;
-          this.line1.TabStop = false;
-          // 
-          // line3
-          // 
-          this.line3.BorderColor = System.Drawing.SystemColors.ControlText;
-          this.line3.Dark3dColor = System.Drawing.SystemColors.ControlDark;
-          this.line3.DashStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-          this.line3.Light3dColor = System.Drawing.SystemColors.ControlLightLight;
-          this.line3.Location = new System.Drawing.Point(9, 78);
-          this.line3.Name = "line3";
-          this.line3.Size = new System.Drawing.Size(188, 2);
-          this.line3.TabIndex = 6;
-          this.line3.TabStop = false;
-          // 
-          // line2
-          // 
-          this.line2.BorderColor = System.Drawing.SystemColors.ControlText;
-          this.line2.Dark3dColor = System.Drawing.SystemColors.ControlDark;
-          this.line2.DashStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-          this.line2.Light3dColor = System.Drawing.SystemColors.ControlLightLight;
-          this.line2.Location = new System.Drawing.Point(8, 50);
-          this.line2.Name = "line2";
-          this.line2.Size = new System.Drawing.Size(188, 2);
-          this.line2.TabIndex = 6;
-          this.line2.TabStop = false;
           // 
           // frmMain
           // 
