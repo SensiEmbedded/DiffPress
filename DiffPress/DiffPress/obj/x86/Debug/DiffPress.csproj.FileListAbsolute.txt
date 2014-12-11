@@ -17,3 +17,5 @@ D:\GitHubRepo\DiffPress\DiffPress\DiffPress\obj\x86\Debug\DiffPress.ucValue.reso
 D:\GitHubRepo\DiffPress\DiffPress\DiffPress\obj\x86\Debug\DiffPress.csproj.GenerateResource.Cache
 D:\GitHubRepo\DiffPress\DiffPress\DiffPress\obj\x86\Debug\DiffPress.exe.licenses
 D:\GitHubRepo\DiffPress\DiffPress\DiffPress\obj\x86\Debug\DiffPress.exe
+D:\GitHubRepos\DiffPress\DiffPress\DiffPress\bin\Debug\DiffPress.exe.config
+D:\GitHubRepos\DiffPress\DiffPress\DiffPress\obj\x86\Debug\DiffPress.exe
