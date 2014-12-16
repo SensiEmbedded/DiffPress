@@ -33,7 +33,7 @@ namespace DiffPress {
     int sample;
       
     public CSQLite(){
-      CreateDataBase();
+      //CreateDataBase();
       GenerateStaticMessageList();
       tmr.Elapsed += new System.Timers.ElapsedEventHandler(tmr_Elapsed);
       tmr.Enabled = true;

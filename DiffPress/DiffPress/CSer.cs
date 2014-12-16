@@ -71,6 +71,24 @@ namespace DiffPress {
       get;
       set;
     }
+    [Category("channelID"), Description("channelID1")]
+    public Int32 channelIDDiffPRess1
+    {
+        get;
+        set;
+    }
+    [Category("channelID"), Description("channelID2")]
+    public Int32 channelIDDiffPRess2
+    {
+        get;
+        set;
+    }
+    [Category("channelID"), Description("channelID3")]
+    public Int32 channelIDDiffPRess3
+    {
+        get;
+        set;
+    }
 
     [Category("appereance"), Description("Specifies something")]
     public bool fullScreen { get; set;}
@@ -97,10 +115,13 @@ namespace DiffPress {
       retries = 2;
       updatems = 1000;
       fullScreen = false;
-      sqlConnectionString = @"Server=sensi2\SQLEXPRESS;Database=aTest;User Id=sa;Password=terorero;";
+      sqlConnectionString = @"Server=qsen.corp.sensata.com;Database=assemtrace;User Id=thp;Password=thp;";
       writeInterval = 5*60;
       writeIfAlarm = true;
       writeWhenNormalize = true;
+      channelIDDiffPRess1 = 1;
+      channelIDDiffPRess2 = 2;
+      channelIDDiffPRess3 = 3;
       //alarms.ToList().ForEach(c => c = 12.3);
       //alarms[0] = 0.0;
       /*

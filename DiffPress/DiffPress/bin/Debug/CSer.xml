@@ -13,9 +13,12 @@
   <alarm2_Low>0</alarm2_Low>
   <alarm3>0</alarm3>
   <timeAlarm>0</timeAlarm>
+  <channelIDDiffPRess1>111</channelIDDiffPRess1>
+  <channelIDDiffPRess2>222</channelIDDiffPRess2>
+  <channelIDDiffPRess3>333</channelIDDiffPRess3>
   <fullScreen>false</fullScreen>
-  <sqlConnectionString>Server=sensi2\SQLEXPRESS;Database=aTest;User Id=sa;Password=terorero;</sqlConnectionString>
-  <writeInterval>300</writeInterval>
+  <sqlConnectionString>Server=qsen.corp.sensata.com;Database=assemtrace;User Id=thp;Password=thp;Server=qsen.corp.sensata.com;Database=assemtrace;User Id=thp;Password=thp;</sqlConnectionString>
+  <writeInterval>5</writeInterval>
   <writeIfAlarm>true</writeIfAlarm>
   <writeWhenNormalize>true</writeWhenNormalize>
 </CSer>
